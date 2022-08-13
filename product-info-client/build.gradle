@@ -16,7 +16,6 @@ def protobufJavaVersion = '3.21.4'
 def junitVersion = '5.9.0'
 
 dependencies {
-
     implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"
     implementation "io.grpc:grpc-netty:${grpcVersion}"
@@ -53,7 +52,7 @@ sourceSets {
 
 jar {
     manifest {
-        attributes "Main-Class": "ecommerce.ProductInfoServer"
+        attributes "Main-Class": "ecommerce.ProductInfoClient"
     }
     from {
         configurations.runtimeClasspath.collect {
@@ -65,7 +64,7 @@ jar {
 }
 
 application {
-    mainClassName = "ecommerce.ProductInfoServer"
+    mainClassName = "ecommerce.ProductInfoClient"
 }
 
 startScripts.enabled = false
