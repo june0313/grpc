@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f887464-5f3b-4610-921c-b8cf7548e1ce" name="Changes" comment="build gRPC server">
-      <change afterPath="$PROJECT_DIR$/product-info-client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-info-client/src/main/java/ecommerce/ProductInfoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-info-client/src/main/proto/ProductInfo.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0f887464-5f3b-4610-921c-b8cf7548e1ce" name="Changes" comment="build gRPC client">
+      <change afterPath="$PROJECT_DIR$/product-info-service/src/main/java/ecommerce/order/OrderManagementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-info-service/src/main/java/ecommerce/order/OrderServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-info-service/src/main/proto/order_management.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-info-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +83,13 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc" type="f1a62948:ProjectNode" />
+                <item name="product-info-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -110,24 +115,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/youngjun/projects/grpc/product-info-client/src/main/proto",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/youngjun/projects/grpc/product-info-client/src/main/proto&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/product-info-client/src/main/proto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.grpc:product-info-client [run]">
+  <component name="RunManager" selected="Gradle.grpc:product-info-service [build]">
     <configuration name="grpc:product-info-client [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,10 +240,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.grpc:product-info-service [build]" />
         <item itemvalue="Gradle.grpc:product-info-client [run]" />
         <item itemvalue="Gradle.grpc:product-info-service [run]" />
         <item itemvalue="Gradle.grpc:product-info-client [build]" />
-        <item itemvalue="Gradle.grpc:product-info-service [build]" />
         <item itemvalue="Gradle.grpc:product-info-service [clean]" />
       </list>
     </recent_temporary>
@@ -254,7 +259,8 @@
       <workItem from="1658035276355" duration="3200000" />
       <workItem from="1658646129302" duration="4000" />
       <workItem from="1659869080168" duration="3701000" />
-      <workItem from="1660033775960" duration="4248000" />
+      <workItem from="1660033775960" duration="6175000" />
+      <workItem from="1660567470298" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1658035597477</created>
@@ -270,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659871220490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build gRPC client">
+      <created>1660372813517</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372813517</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +303,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="build gRPC server" />
-    <option name="LAST_COMMIT_MESSAGE" value="build gRPC server" />
+    <MESSAGE value="build gRPC client" />
+    <option name="LAST_COMMIT_MESSAGE" value="build gRPC client" />
   </component>
 </project>
